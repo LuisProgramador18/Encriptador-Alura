@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #F3F5FC;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    width: auto;
+    height: auto;
+}
+
+.logo_alura {
+    width: 10%;
+    padding-top: 2.5rem;
+    margin-left: 0.63rem;
+}
+
+.encryptor {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: -3%;
+    padding-right: 5%;
+}
+
+.encryptor__input__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.encryptor__input__form__advise__text span{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #495057;
+    padding-right: 27.5rem;
+}
+
+textarea {
+    padding: 8.5rem 0 1rem 10rem;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #0A3871;
+    width: 52.5rem;
+    height: 28rem;
+    resize: none;
+}
+
+textarea::placeholder {
+    opacity: 1;
+    color: #0A3871;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.encryptor__input__form__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.encryptor__input__form__buttons>button {
+    width: 20.5rem;
+    height: 4.19rem;
+    border-radius: 1.5rem;
+    border: 2px solid #0A3871;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.encryptor__input__form__buttons__Encrypt {
+    background-color: #0A3871;
+    color: #D8DFE8;
+}
+
+.encryptor__input__form__buttons__Decrypt {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.encryptor__output {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    height: 45.9rem;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 25rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.encryptor__output__text__crypted {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: justify;
+    width: 100%;
+    max-width: 100%;
+    height: 75%;
+    color: #0A3871;
+    overflow: auto;
+    overflow-wrap: break-word;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    display: none;
+}
+
+.encryptor__output__no__message__Tittle {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.encryptor__output__request__message {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.encryptor__output__img {
+    width: 21rem;
+    height: 19rem;
+    padding-top: 9rem;
+}
+
+.encryptor__output__button {
+    width: 80%;
+    height: 4.19rem;
+    border-radius: 1.5rem;
+    border: 2px solid #0A3871;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 38rem;
+    padding: 0.5rem;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    textarea {
+        width: 40rem;
+        height: 24rem;
+        padding: 6rem 0 0 5rem;
+        font-size: 1.5rem;
+    }
+
+    .encryptor__input__form__buttons>button {
+        width: 18rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .encryptor {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    textarea {
+        width: 35rem;
+        height: 20rem;
+        padding: 5rem 0 0 3rem;
+        font-size: 1.25rem;
+    }
+
+    .encryptor__input__form__buttons>button {
+        width: 16rem;
+        height: 3rem;
+    }
+
+    span {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 770px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encryptor {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .logo_alura {
+        margin-left: -40rem;
+    }
+
+    .encryptor__input__form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    textarea {
+        margin-left: -1rem;
+        width: 42rem;
+        height: 15rem;
+        padding: 4rem 0 0 2rem;
+        font-size: 1.5rem;
+    }
+
+    .encryptor__input__form__buttons>button {
+        width: 20.73rem;
+        height: 4.2rem;
+    }
+
+    .encryptor__output__img {
+        display: none;
+    }
+
+    .encryptor__output {
+        display: flex;
+        flex-direction: column;
+        width: 42rem;
+        max-width: 100%;
+        overflow: hidden;
+        height: auto;
+        margin-left: 1%;
+    }
+
+    .encryptor__output__text__crypted {
+        flex-grow: 1;
+        overflow-wrap: break-word;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .encryptor__output__button {
+        position: relative;
+        width: 100%;
+        top: 0rem;
+    }
+
+}
+
+@media (max-width: 435px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .logo_alura {
+        padding-left: 20rem;
+        padding-bottom: 5%;
+        padding-top: 1rem;
+        width: 5rem;
+        height: auto;
+    }
+
+    .encryptor__input__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .encryptor__input__form__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encryptor__input__form__text__area {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 42rem;
+        max-width: 36%;
+        overflow: scroll;
+        flex-grow: 1;
+        height: 12rem;
+        padding: 4rem 0 1rem 21rem;
+        font-size: 1.5rem;
+        resize: none;
+    }
+
+    .encryptor__input__form__buttons>button {
+        width: 20.73rem;
+        height: 4.2rem;
+    }
+
+    .encryptor__output__img {
+        display: none;
+    }
+
+    .encryptor__output {
+        display: flex;
+        flex-direction: column;
+        width: 20.4rem;
+        max-width: 100%;
+        overflow: hidden;
+        height: auto;
+        margin-left: 21.7rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .encryptor__output__text__crypted {
+        flex-grow: 1;
+        overflow-wrap: break-word;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .encryptor__output__button {
+        position: relative;
+        width: 100%;
+        top: 0rem;
+    }
+}

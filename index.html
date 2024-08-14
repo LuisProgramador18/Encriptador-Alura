@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jsFiles/logica.js"></script>
+    
+</head>
+
+<body>
+    <img class="logo_alura" src="iconos/Logo.png" alt="">
+    <main class="encryptor">
+        <section class="encryptor__input__form">
+            <div class="encryptor__input__form__text__area">
+                <textarea id="area_text_to_encrypt" placeholder="Ingrese el texto aquí..."></textarea>
+            </div>
+            <span class="encryptor__input__form__advise__text"><img src="iconos/bi_exclamation-circle-fill.svg"
+                    alt="Imagen de aviso"> Solo letras minúsculas y sin acentos.</span>
+            <div class="encryptor__input__form__buttons">
+                <button class="encryptor__input__form__buttons__Encrypt" onclick="encryptText()">Encriptar</button>
+                <button class="encryptor__input__form__buttons__Decrypt"
+                    onclick="decryptLetters()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encryptor__output">
+            <p class="encryptor__output__text__crypted" id="place_to_show_encryption"></p>
+            <img class="encryptor__output__img" src="imagenes/Muñeco.png" alt="notFoundedText" id="notFoundedTxtImage">
+            <h3 class="encryptor__output__no__message__Tittle" id="notFoundedTxtTittle">Ningún mensaje fue encontrado
+            </h3>
+            <h5 class="encryptor__output__request__message" id="notFoundedTxtReqMessg">Ingresa el texto que desees
+                encriptar o desencriptar.</h5>
+            <button class="encryptor__output__button" id="copy_button" onclick="copyText()">Copiar</button>
+        </section>
+    </main>
+</body>
+
+</html>
