@@ -1,6 +1,6 @@
 # 🔒 Encriptador y Desencriptador de Texto
 
-¡Bienvenido al **Encriptador y Desencriptador de Texto**! Este proyecto te permite cifrar y descifrar texto utilizando algoritmos de encriptación. Es perfecto para mantener tus datos seguros y protegidos. 🛡️
+¡Bienvenido al **Encriptador y Desencriptador de Texto**! Este proyecto le permite cifrar y descifrar texto utilizando algoritmos de encriptación. Es perfecto para mantener sus datos seguros y protegidos. 🛡️
 
 ## 🚀 Características
 
